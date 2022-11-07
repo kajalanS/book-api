@@ -1,0 +1,51 @@
+###
+
+# get all
+GET http://localhost:3000/api/book/
+
+###
+
+# get single
+GET http://localhost:3000/api/book/31
+
+
+
+###
+# create
+PUT http://localhost:3000/api/book/
+Content-Type: application/json
+
+{
+    "title": "som",
+    "author": "will",
+    "type": "war",
+    "description": "some info description"
+}
+
+###
+
+# update
+PUT http://localhost:3000/api/book/31
+Content-Type: application/json
+
+
+{
+    "title": "som",
+    "author": "will",
+    "type": "war,action",
+    "description": "some Updated next info description"
+}
+
+
+###
+
+# delete
+DELETE  http://localhost:3000/api/book/31
+Content-Type: application/json
+
+{
+
+}
+
+
+###
